@@ -1,75 +1,48 @@
-# Nuxt Minimal Starter
+# IntelliToggle Landing Page - Frontend Assessment
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 🚀 Live Demo
+**View the live site here:** [https://intellitoggle-frontend1.vercel.app/](https://intellitoggle-frontend1.vercel.app/)
 
-## Setup
+## 📝 Project Overview
+This repository contains the frontend implementation of the IntelliToggle landing page, built according to the provided Figma design specifications. The goal was to achieve maximum visual fidelity while ensuring a fully responsive, production-ready codebase.
 
-Make sure to install dependencies:
+## 🛠 Tech Stack
+* **Framework:** Nuxt 3 / Vue 3
+* **Styling:** Tailwind CSS (configured with custom brand variables)
+* **Deployment:** Vercel
 
-```bash
-# npm
+## 📸 Pixelay Visual Fidelity Proof
+As requested, visual proof of layout accuracy using the Pixelay extension has been provided in the `/pixelay` directory of this repository:
+* `pixelay-desktop.png`: Demonstrates alignment of the desktop layout.
+* `pixelay-mobile.png`: Demonstrates responsive stacking and mobile alignment.
+
+## 💡 Developer Notes
+Please see the `notes.md` file in the root directory for a brief breakdown of my component architecture decisions, styling approach, responsive execution, and thoughts on typography rendering differences. 
+
+## 💻 Local Setup Instructions
+
+If you wish to run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-github-repo-url>
+Install dependencies:
+
+bash
 npm install
+Run the development server:
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+bash
 npm run dev
+Open http://localhost:3000 in your browser.
 
-# pnpm
-pnpm dev
+text
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Step 2: Push to GitHub
+Now that the README is in your folder, push it up so it shows on your GitHub profile:
+1. Open your terminal in VS Code.
+2. Run these commands:
+   ```bash
+   git add README.md
+   git commit -m "Added project README"
+   git push origin main
