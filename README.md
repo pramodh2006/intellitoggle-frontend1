@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo & Repository
 * **Live Site:** [https://intellitoggle-frontend1.vercel.app/](https://intellitoggle-frontend1.vercel.app/)
-* **Repository:** [https://github.com/pramodh11529/intellitoggle-frontend1](https://github.com/pramodh11529/intellitoggle-frontend1)
+* **Repository:** [https://github.com/pramodh2006/intellitoggle-frontend1](https://github.com/pramodh2006/intellitoggle-frontend1)
 
 ## 🛠 Tech Stack
 * Nuxt 3 / Vue 3
