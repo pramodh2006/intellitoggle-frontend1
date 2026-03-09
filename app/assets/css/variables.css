@@ -1,0 +1,33 @@
+/* ─────────────────────────────────────────
+   DESIGN TOKENS — change here, affects all
+   ───────────────────────────────────────── */
+:root {
+  /* Brand colours */
+  --color-brand-dark:    #1E1B45;
+  --color-brand-orange:  #F5A623;
+  --color-bg-light:      #F4F5FA;
+  --color-bg-white:      #FFFFFF;
+
+  /* Typography */
+  --font-base: 'Inter', sans-serif;
+
+  /* Spacing */
+  --section-max-width: 80rem;   /* 1280px */
+  --section-padding-x: 1rem;
+  --section-padding-y: 5rem;
+
+  /* Glass card (AI section) — exact Figma values */
+  --glass-bg:           rgba(255, 255, 255, 0.08);
+  --glass-border:       0.2px solid #EDECF6;
+  --glass-radius:       12px;
+  --glass-padding:      24px;
+  --glass-gap:          32px;
+
+  /* Why section icon box */
+  --why-icon-bg:        #EEEDF9;
+  --why-icon-radius:    12px;
+  --why-icon-size:      56px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+}

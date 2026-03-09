@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #2B2866; 
+  --color-brand-orange: #F8A52C; 
+  --color-brand-light: #F0F0F8; 
+}
+.glass-card {
+  position: relative;
+  border-radius: 24px;                    /* matches the soft corners */
+  padding: 32px 40px;                     /* adjust if you need tighter text */
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  /* Very light diagonal frost, almost transparent */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(108, 94, 255, 0.05)
+  );
+  backdrop-filter: blur(18px);            /* this is what makes it literally glass */
+  -webkit-backdrop-filter: blur(18px);    /* Safari */
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+.glass-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.glass-card__title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.glass-card__body {
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
