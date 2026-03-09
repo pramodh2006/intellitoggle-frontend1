@@ -1,48 +1,38 @@
-# IntelliToggle Landing Page - Frontend Assessment
+# IntelliToggle Frontend Assignment
 
-## 🚀 Live Demo
-**View the live site here:** [https://intellitoggle-frontend1.vercel.app/](https://intellitoggle-frontend1.vercel.app/)
-
-## 📝 Project Overview
-This repository contains the frontend implementation of the IntelliToggle landing page, built according to the provided Figma design specifications. The goal was to achieve maximum visual fidelity while ensuring a fully responsive, production-ready codebase.
+## 🚀 Live Demo & Repository
+* **Live Site:** [https://intellitoggle-frontend1.vercel.app/](https://intellitoggle-frontend1.vercel.app/)
+* **Repository:** [https://github.com/pramodh11529/intellitoggle-frontend1](https://github.com/pramodh11529/intellitoggle-frontend1)
 
 ## 🛠 Tech Stack
-* **Framework:** Nuxt 3 / Vue 3
-* **Styling:** Tailwind CSS (configured with custom brand variables)
-* **Deployment:** Vercel
+* Nuxt 3 / Vue 3
+* Tailwind CSS
 
-## 📸 Pixelay Visual Fidelity Proof
-As requested, visual proof of layout accuracy using the Pixelay extension has been provided in the `/pixelay` directory of this repository:
-* `pixelay-desktop.png`: Demonstrates alignment of the desktop layout.
-* `pixelay-mobile.png`: Demonstrates responsive stacking and mobile alignment.
+## 📸 Pixelay Evidence
+Per the assignment requirements, objective layout fidelity checks have been provided. Please navigate to the `/pixelay` directory in this repository to find:
+1. `pixelay-desktop.png` - Desktop layout overlay
+2. `pixelay-mobile.png` - Mobile layout overlay
+3. `notes.md` - Brief bullet points explaining the minor visual variances (such as font rendering differences).
 
-## 💡 Developer Notes
-Please see the `notes.md` file in the root directory for a brief breakdown of my component architecture decisions, styling approach, responsive execution, and thoughts on typography rendering differences. 
+## ⚖️ Tradeoffs & Shortcuts
+* **Component Abstraction:** To adhere to the 6-8 hour timebox, I abstracted the major page sections into individual components (`HeroSection`, `FeatureHighlights`, `CtaSection`), but left the internal elements (like buttons) as raw HTML/Tailwind classes. In a production environment, I would abstract these into atomic components (e.g., `<BaseButton variant="primary">`) to keep the codebase fully DRY.
+* **Fluid Layouts vs Pixel-Perfect:** I opted to use fluid Tailwind spacing (`gap`, `rem` margins/padding) rather than absolute pixel values. While this causes minor 2-4px drifting from the exact Figma canvas in some areas, it ensures the layout reflows safely and predictably across all screen sizes without breaking.
+
+## 🔮 What I Would Do With More Time
+* **Accessibility (a11y) Polish:** I would utilize a library like Headless UI to ensure the mobile navigation toggle and any interactive elements have perfect ARIA labels, focus-trapping, and keyboard navigation support.
+* **Performance Enhancements:** Implement Nuxt Image (`@nuxt/image`) to automatically optimize, format (WebP/AVIF), and lazy-load the dashboard and logo assets.
+* **Micro-Interactions:** Add subtle, scroll-triggered entrance animations (via Nuxt transition or GSAP) to the feature cards and hero section to elevate the premium feel of the landing page.
+
+---
 
 ## 💻 Local Setup Instructions
 
-If you wish to run this project locally, follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/pramodh11529/intellitoggle-frontend.git
 
-1. **Clone the repository:**
-   ```bash
-   git clone <your-github-repo-url>
-Install dependencies:
-
-bash
+# Install dependencies
 npm install
-Run the development server:
 
-bash
+# Run the development server
 npm run dev
-Open http://localhost:3000 in your browser.
-
-text
-
-### Step 2: Push to GitHub
-Now that the README is in your folder, push it up so it shows on your GitHub profile:
-1. Open your terminal in VS Code.
-2. Run these commands:
-   ```bash
-   git add README.md
-   git commit -m "Added project README"
-   git push origin main
